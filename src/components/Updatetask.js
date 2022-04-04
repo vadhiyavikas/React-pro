@@ -1,6 +1,9 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 export const Updatetask = () => {
@@ -31,7 +34,16 @@ export const Updatetask = () => {
         }
         e.preventDefault()
         axios.put(`http://localhost:8080/tasks/${id}`,Updatetask).then(res => {
-            alert("data updated")
+            // alert("data updated")
+            toast.success('🦄 Data updated succesfully', {
+                position: "top-center",
+                autoClose: 1000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                });
             console.log(res.data.data)
         })
     }
@@ -71,6 +83,7 @@ export const Updatetask = () => {
 
                                             <div class="d-flex justify-content-center">
                                                 <button type="submit" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Update Task</button>
+                                                <ToastContainer/>
                                             </div>
 
 

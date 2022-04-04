@@ -58,7 +58,7 @@ export const Task = () => {
                                     <table class="table mb-4">
                                         <thead>
                                             <tr>
-                                                <th scope="col">No.</th>
+                                                <th scope="col">No+</th>
                                                 <th scope="col">Task Name</th>
                                                 <th scope="col">Description</th>
                                                 <th scope="col">Time</th>

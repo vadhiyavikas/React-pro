@@ -12,6 +12,7 @@ import {Task} from './components/Task';
 import {NewTask} from './components/NewTask'
 import { Updatetask } from './components/Updatetask';
 import { Deletetask } from './components/Deletetask';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
       {/* <Herosection/> */}
       {/* <NewTask/> */}
       
+      
+      
       <Routes>
      <Route path='/signin' element={<Signin/>}/>
      <Route path='/' element={<Herosection/>}/>
@@ -30,10 +33,16 @@ function App() {
      <Route path='/task' element={<NewTask/>}/>
      <Route path='/table/Update/:id' element={<Updatetask/>}/>
      <Route path='/table/delete/:id' element={<Deletetask/>}/>
+     <Route path='/About' element={<Aboutsection/>}/>
+
+
+
+     
 
       
 
       </Routes>
+      {/* <Footer/> */}
     </div>
   );
 }

@@ -11,10 +11,10 @@ export const Topbar = () => {
                         <i className="bi bi-phone-fill phone-icon" /> +1 5589 55488 55
                     </div>
                     <div className="social-links d-none d-md-block">
-                        <a href="#" className="twitter"><i className="bi bi-twitter" /></a>
+                        {/* <a href="#" className="twitter"><i className="bi bi-twitter" /></a>
                         <a href="#" className="facebook"><i className="bi bi-facebook" /></a>
                         <a href="#" className="instagram"><i className="bi bi-instagram" /></a>
-                        <a href="#" className="linkedin"><i className="bi bi-linkedin" /></a>
+                        <a href="#" className="linkedin"><i className="bi bi-linkedin" /></a> */}
                     </div>
                 </div>
             </section>
